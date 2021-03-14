@@ -188,6 +188,7 @@ stats
 
   .stats {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .stats img {
@@ -197,9 +198,15 @@ stats
   .stats span {
     font-size: 3rem;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .stats {
+    flex-direction: column;
+  }
 
   .communities {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 }
 

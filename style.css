@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --pale-blue: hsl(207, 100%, 98%);
+  --transition: all 0.2s linear;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: var(--transition);
+}
+
+img:not(.logo) {
+  display: block;
+  width: 100%;
+}
+.section-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.875rem 2rem;
+  border-radius: 30px;
+  border: none;
+  background: var(--pink);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--light-pink);
+}
+
+/* 
+-------------------------------
+navbar
+-------------------------------
+*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+}
+
+.nav-btn {
+  color: var(--pink);
+  background: transparent;
+  border: 1px solid var(--pink);
+  transition: var(--transition);
+}
+
+.nav-btn:hover {
+  color: var(--light-pink);
+  background: transparent;
+  border-color: var(--light-pink);
+}
+
+/* 
+-------------------------------
+hero
+-------------------------------
+*/
+
+.hero-section {
+  text-align: center;
+  margin: 1.5rem auto;
+  width: 90%;
+  /* padding: 1rem; */
+}
+
+.hero-section p {
+  max-width: 30rem;
+  margin: 1rem auto 2rem auto;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  padding: 0.875rem 3rem;
+}
+
+.hero-img {
+  margin: 6rem auto 0 auto;
+  max-width: 900px;
+}
+
+/* 
+-------------------------------
+stats
+-------------------------------
+*/
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.stats img {
+  max-width: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+.stats span {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* 
+-------------------------------
+blocks
+-------------------------------
+*/
+
+.block-grow,
+.block-users {
+  background: var(--pale-blue);
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  /* margin-top: 5rem; */
+}
+
+.block > * {
+  flex: 0 0 50%;
+}
+
+.block-img img {
+  max-width: 450px;
+  margin-left: auto;
+}
+
+.block-text p,
+.block-text h2 {
+  max-width: 450px;
+}
+
+.flow .block-text p,
+.flow .block-text h2 {
+  margin-left: auto;
+}
+
+#flow-img {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.block-flow {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* 
+-------------------------------
+cta
+-------------------------------
+*/
+.cta {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.cta-banner {
+  text-align: center;
+}
+
+/* 
+-------------------------------
+footer
+-------------------------------
+*/
+
+footer {
+  background: var(--dark-cyan);
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.footer {
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.footer > * {
+  flex: 0 0 calc(50% - 5rem);
+}
+
+.icon {
+  max-width: 1rem;
+  margin-right: 1rem;
+}
+
+.info > *,
+.newsletter > * {
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  max-width: 350px;
+}
+
+.social {
+  margin-top: 2rem;
+}
+
+.social a {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.social a:hover {
+  color: aqua;
+}
+
+.newsletter h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.newsletter form {
+  margin-top: 2rem;
+}
+
+.email-input {
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-right: 1.5rem;
+  width: 16rem;
+  height: 2.2rem;
+}
+
+.submit-input {
+  padding: 0.7rem 2.2rem;
+  border-radius: 5px;
+  border: none;
+  background: var(--pink);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-input:hover {
+  background: var(--light-pink);
+}
